@@ -1,0 +1,5 @@
+def tampilkan_laporan(lokasi, total_panen):
+    print("\n===================================")
+    print(f" LAPORAN PANEN KEBUN: {lokasi.upper()}")
+    print(f" Total Hasil: {total_panen} kg")
+    print("===================================")

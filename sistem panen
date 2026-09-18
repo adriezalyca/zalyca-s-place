@@ -7,3 +7,23 @@ if __name__ == "__main__":
     panen_padi = [120, 250, 180, 310]
     total = hitung_total_panen(panen_padi)
     print(f"Total hasil panen padi: {total} kg")
+
+# Berkas: main.py
+def hitung_total_panen(daftar_panen):
+    total = sum(daftar_panen)
+    return total
+
+def hitung_diskon(total_harga, persen_diskon=10):
+    potongan = total_harga * (persen_diskon / 100)
+    harga_akhir = total_harga - potongan
+    return harga_akhir
+
+if __name__ == "__main__":
+    panen_padi = [120, 250, 180, 310]
+    total = hitung_total_panen(panen_padi)
+    print(f"Total hasil panen padi: {total} kg")
+    
+    harga_per_kg = 10000
+    total_harga = total * harga_per_kg
+    total_bayar = hitung_diskon(total_harga, 10)
+    print(f"Total harga setelah diskon (10%): Rp{total_bayar:,.0f}")

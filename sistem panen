@@ -1,0 +1,9 @@
+# Berkas: main.py
+def hitung_total_panen(daftar_panen):
+    total = sum(daftar_panen)
+    return total
+
+if __name__ == "__main__":
+    panen_padi = [120, 250, 180, 310]
+    total = hitung_total_panen(panen_padi)
+    print(f"Total hasil panen padi: {total} kg")

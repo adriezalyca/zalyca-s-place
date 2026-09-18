@@ -1,5 +1,5 @@
 def input_data_panen():
     print("--- Form Input Hasil Panen ---")
-    lokasi = input("Masukkan lokasi lahan: ")
+    lokasi = input("Masukkan lokasi taman: ")
     jumlah = float(input("Masukkan jumlah panen (kg): "))
     return {"lokasi": lokasi, "jumlah": jumlah}
